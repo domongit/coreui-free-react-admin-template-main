@@ -36,19 +36,6 @@ const AppHeader = () => {
     </div>
       <CContainer fluid>
         
-         
-        {/* <CHeaderBrand >
-        <CImage
-            src={anandhamLogo}
-            alt={anandhamLogo}
-            height="150"
-            rounded="true"
-            className="mr-2"
-            backgroundSize='cover'
-          />
-        </CHeaderBrand> */}
-        {/* <CHeaderNav className="d-none d-md-flex me-auto" logo={houseBoat}>
-         */}
             <CHeaderNav className="d-md-flex me-auto" >
           <CNavItem >
             <CNavLink to="/dashboard" component={NavLink}>
@@ -79,7 +66,7 @@ const AppHeader = () => {
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">
+            <CNavLink href="mailto:dvpjames@gmail.com">
               <CIcon icon={cilEnvelopeOpen} size="lg" />
             </CNavLink>
           </CNavItem>
