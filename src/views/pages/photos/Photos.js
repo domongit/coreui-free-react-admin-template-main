@@ -108,8 +108,19 @@ const Photos=()=>{
         
     <CCard className="mb-4">
     <CCardBody>
- 
-      <CRow>
+   
+    <CCarousel controls  animate="true"  >
+                {items.map((item, index) => (
+                    
+                    <CCarouselItem key={index}>
+                        <img style={{ maxHeight: '600px', objectFit: 'contain' }} className="d-block w-100" src={item.src} alt={item.altText} />
+                        {/* <p className="d-flex  text-small-emphasis small justify-content-center">{item.caption}</p> */}
+                        <p className="pt-3">{item.caption}</p>
+                        
+                    </CCarouselItem>
+                    ))}
+              </CCarousel>
+      {/* <CRow>
       <CCol xs={12}>
         <CCard className="mb-4">
          
@@ -131,7 +142,7 @@ const Photos=()=>{
         </CCard>
       </CCol>
       </CRow>
- 
+  */}
 
     </CCardBody>
     </CCard>
